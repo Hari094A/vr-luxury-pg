@@ -1,4 +1,4 @@
-﻿import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ProtectedRoute from "./components/ProtectedRoute";
 import OwnerProtectedRoute from "./components/OwnerProtectedRoute";
@@ -66,3 +66,4 @@ function App() {
 }
 
 export default App;
+

@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
@@ -73,7 +73,7 @@ function Login() {
             className={loginType === "customer" ? "active" : ""}
             onClick={() => switchLogin("customer")}
           >
-            👤 Customer Login
+            ?? Customer Login
           </button>
 
           <button
@@ -81,7 +81,7 @@ function Login() {
             className={loginType === "admin" ? "active" : ""}
             onClick={() => switchLogin("admin")}
           >
-            🛡️ Admin Login
+            ??? Admin Login
           </button>
         </div>
 
@@ -143,7 +143,7 @@ function Login() {
         )}
 
         <Link to="/" className="login-back">
-          ← Back to VR Luxury PG
+          ? Back to VR Luxury PG
         </Link>
 
       </div>
@@ -152,3 +152,4 @@ function Login() {
 }
 
 export default Login;
+

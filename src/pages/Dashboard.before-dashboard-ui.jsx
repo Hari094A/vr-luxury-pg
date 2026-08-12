@@ -1,4 +1,4 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { pgInfo } from "../data/pgdata";
 
 function Dashboard() {
@@ -24,11 +24,11 @@ function Dashboard() {
     <main className="dashboard-page">
       <div className="container-main section-padding">
 
-        <div className="dashboard-topbar"><Link to="/" className="dashboard-home-link">← Back to VR Luxury PG</Link></div><div className="dashboard-header">
+        <div className="dashboard-topbar"><Link to="/" className="dashboard-home-link">? Back to VR Luxury PG</Link></div><div className="dashboard-header">
           <span className="section-label">VR LUXURY PG</span>
 
           <h1 className="section-title">
-            Welcome, {customer.name} 👋
+            Welcome, {customer.name} ??
           </h1>
 
           <p className="section-description">
@@ -322,3 +322,4 @@ function Dashboard() {
 }
 
 export default Dashboard;
+

@@ -1,8 +1,8 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { ArrowLeft, CheckCircle2, Phone, Send, User, Mail, MessageSquare } from "lucide-react";
 import BackButton from "../components/BackButton";
-import { pgInfo } from "../data/pgData";
+import { pgInfo } from "../data/pgdata";
 
 function Booking() {
   const { id } = useParams();
@@ -96,7 +96,7 @@ function Booking() {
                 </p>
 
                 <p className="mt-1 text-sm text-slate-600">
-                  ₹{Number(room.price).toLocaleString("en-IN")} / month
+                  ?{Number(room.price).toLocaleString("en-IN")} / month
                 </p>
               </div>
 
@@ -163,7 +163,7 @@ function Booking() {
                 <div className="flex justify-between py-3">
                   <span className="text-slate-400">Monthly Rent</span>
                   <strong>
-                    ₹{Number(room.price).toLocaleString("en-IN")}
+                    ?{Number(room.price).toLocaleString("en-IN")}
                   </strong>
                 </div>
 
@@ -343,3 +343,4 @@ function Booking() {
 }
 
 export default Booking;
+

@@ -1,11 +1,11 @@
-﻿import {
+import {
   MapPin,
   Navigation,
   Phone,
   ExternalLink,
 } from "lucide-react";
 import BackButton from "../components/BackButton";
-import { pgInfo } from "../data/pgData";
+import { pgInfo } from "../data/pgdata";
 
 function Location() {
   const mapQuery = encodeURIComponent(
@@ -155,3 +155,4 @@ function Location() {
 }
 
 export default Location;
+

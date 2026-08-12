@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   Save,
@@ -465,7 +465,7 @@ function OwnerDashboard() {
                 <strong>{enquiry.roomTitle}</strong>
 
                 <span>
-                  ₹{Number(enquiry.rent).toLocaleString("en-IN")}/month
+                  ?{Number(enquiry.rent).toLocaleString("en-IN")}/month
                 </span>
 
               </div>
@@ -586,7 +586,7 @@ function OwnerDashboard() {
         </div>
 
         <footer className="owner-admin-footer">
-          <span>© 2026 VR Luxury PG</span>
+          <span>� 2026 VR Luxury PG</span>
           <span>Owner Administration Panel</span>
         </footer>
 
@@ -596,6 +596,7 @@ function OwnerDashboard() {
 }
 
 export default OwnerDashboard;
+
 
 
 

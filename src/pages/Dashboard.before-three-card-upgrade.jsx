@@ -1,4 +1,4 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { pgInfo } from "../data/pgdata";
 
 function Dashboard() {
@@ -14,11 +14,11 @@ function Dashboard() {
     <main className="dashboard-page">
       <div className="container-main section-padding">
 
-        <div className="dashboard-topbar"><Link to="/" className="dashboard-home-link">← Back to VR Luxury PG</Link></div><div className="dashboard-header">
+        <div className="dashboard-topbar"><Link to="/" className="dashboard-home-link">? Back to VR Luxury PG</Link></div><div className="dashboard-header">
           <span className="section-label">VR LUXURY PG</span>
 
           <h1 className="section-title">
-            Welcome, {customer.name} 👋
+            Welcome, {customer.name} ??
           </h1>
 
           <p className="section-description">
@@ -30,7 +30,7 @@ function Dashboard() {
         <div className="dashboard-grid">
 
           <Link to="/rooms" className="dashboard-card">
-            <div className="dashboard-icon">🏠</div>
+            <div className="dashboard-icon">??</div>
 
             <h2>My Room</h2>
 
@@ -40,7 +40,7 @@ function Dashboard() {
             </p>
 
             <span className="dashboard-card-link">
-              View Rooms →
+              View Rooms ?
             </span>
           </Link>
 
@@ -72,7 +72,7 @@ function Dashboard() {
           </Link>
 
           <div className="dashboard-card">
-            <div className="dashboard-icon">📋</div>
+            <div className="dashboard-icon">??</div>
 
             <h2>My Booking</h2>
 
@@ -86,12 +86,12 @@ function Dashboard() {
             </p>
 
             <Link to="/rooms" className="dashboard-card-link">
-              Choose a Room →
+              Choose a Room ?
             </Link>
           </div>
 
           <a href="tel:8985260247" className="dashboard-card">
-            <div className="dashboard-icon">📞</div>
+            <div className="dashboard-icon">??</div>
 
             <h2>Contact Owner</h2>
 
@@ -101,7 +101,7 @@ function Dashboard() {
             </p>
 
             <span className="dashboard-card-link">
-              Call Owner →
+              Call Owner ?
             </span>
           </a>
 
@@ -129,3 +129,4 @@ function Dashboard() {
 }
 
 export default Dashboard;
+

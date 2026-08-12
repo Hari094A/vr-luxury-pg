@@ -1,4 +1,4 @@
-﻿import {
+import {
   ArrowRight,
   BedDouble,
   Bath,
@@ -9,7 +9,7 @@
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import BackButton from "../components/BackButton";
-import { pgInfo } from "../data/pgData";
+import { pgInfo } from "../data/pgdata";
 
 function Rooms() {
   return (
@@ -130,7 +130,7 @@ function RoomCard({ room }) {
 
         <div className="mt-3 flex items-end gap-1">
           <span className="text-2xl font-bold text-[var(--color-navy)]">
-            ₹{Number(room.price).toLocaleString("en-IN")}
+            ?{Number(room.price).toLocaleString("en-IN")}
           </span>
 
           <span className="pb-1 text-sm text-[var(--color-muted)]">
@@ -196,3 +196,4 @@ function DetailRow({ icon, label, value }) {
 }
 
 export default Rooms;
+

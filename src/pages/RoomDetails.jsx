@@ -1,4 +1,4 @@
-﻿import {
+import {
   ArrowRight,
   BedDouble,
   Bath,
@@ -11,7 +11,7 @@
 } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 import BackButton from "../components/BackButton";
-import { pgInfo } from "../data/pgData";
+import { pgInfo } from "../data/pgdata";
 
 function RoomDetails() {
   const { id } = useParams();
@@ -147,7 +147,7 @@ function RoomDetails() {
                     icon={<Wallet size={20} />}
                     title="Security Deposit"
                     value={
-                      "₹" +
+                      "?" +
                       Number(pgInfo.deposit.amount).toLocaleString("en-IN")
                     }
                   />
@@ -187,7 +187,7 @@ function RoomDetails() {
 
                 <div className="mt-2">
                   <span className="text-4xl font-bold text-[var(--color-navy)]">
-                    ₹{Number(room.price).toLocaleString("en-IN")}
+                    ?{Number(room.price).toLocaleString("en-IN")}
                   </span>
 
                   <span className="ml-2 text-sm text-[var(--color-muted)]">
@@ -223,7 +223,7 @@ function RoomDetails() {
                     icon={<Wallet size={18} />}
                     label="Deposit"
                     value={
-                      "₹" +
+                      "?" +
                       Number(pgInfo.deposit.amount).toLocaleString("en-IN")
                     }
                   />
@@ -237,7 +237,7 @@ function RoomDetails() {
                     />
 
                     <p className="text-sm leading-6 text-slate-600">
-                      Security deposit is ₹
+                      Security deposit is ?
                       {Number(pgInfo.deposit.amount).toLocaleString("en-IN")}.
                       Refund conditions are subject to the PG rules.
                     </p>
@@ -317,3 +317,4 @@ function SummaryRow({ icon, label, value }) {
 }
 
 export default RoomDetails;
+

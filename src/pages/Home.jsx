@@ -1,4 +1,4 @@
-﻿import {
+import {
   ArrowRight,
   ShieldCheck,
   Wifi,
@@ -11,7 +11,7 @@
   CheckCircle2,
 } from "lucide-react";
 
-import { pgInfo } from "../data/pgData";
+import { pgInfo } from "../data/pgdata";
 
 function Home() {
   return (
@@ -294,9 +294,9 @@ function Home() {
                 </h3>
 
                 <p className="mt-2 text-sm leading-6 text-slate-300">
-                  Morning: 8:00 AM â€“ 10:00 AM
+                  Morning: 8:00 AM – 10:00 AM
                   <br />
-                  Night: 8:00 PM â€“ 10:00 PM
+                  Night: 8:00 PM – 10:00 PM
                   <br />
                   Saturday & Sunday: Morning, afternoon and night.
                 </p>
@@ -423,7 +423,7 @@ function RoomCard({ room }) {
 
           <div className="text-right">
             <p className="text-xl font-bold text-[var(--color-navy)]">
-              â‚¹{room.price.toLocaleString("en-IN")}
+              ₹{room.price.toLocaleString("en-IN")}
             </p>
 
             <p className="text-xs text-[var(--color-muted)]">per month</p>
@@ -477,3 +477,4 @@ function FacilityItem({ icon, title, text }) {
 }
 
 export default Home;
+

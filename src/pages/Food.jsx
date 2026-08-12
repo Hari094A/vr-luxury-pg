@@ -1,6 +1,6 @@
-ï»¿import { ArrowLeft, Clock, Utensils, CalendarDays, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, Clock, Utensils, CalendarDays, CheckCircle2 } from "lucide-react";
 import BackButton from "../components/BackButton";
-import { pgInfo } from "../data/pgData";
+import { pgInfo } from "../data/pgdata";
 
 function Food() {
   return (
@@ -41,8 +41,8 @@ function Food() {
               </h2>
 
               <div className="mt-5 space-y-4">
-                <FoodTime title="Morning" time="8:00 AM â€“ 10:00 AM" />
-                <FoodTime title="Night" time="8:00 PM â€“ 10:00 PM" />
+                <FoodTime title="Morning" time="8:00 AM – 10:00 AM" />
+                <FoodTime title="Night" time="8:00 PM – 10:00 PM" />
               </div>
             </div>
 
@@ -117,3 +117,4 @@ function FoodTime({ title, time }) {
 }
 
 export default Food;
+

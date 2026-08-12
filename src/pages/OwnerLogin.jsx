@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 
 function OwnerLogin() {
@@ -66,7 +66,7 @@ function OwnerLogin() {
         </form>
 
         <Link to="/" className="auth-back-link">
-          ← Back to VR Luxury PG
+          ? Back to VR Luxury PG
         </Link>
 
       </div>
@@ -75,5 +75,6 @@ function OwnerLogin() {
 }
 
 export default OwnerLogin;
+
 
 

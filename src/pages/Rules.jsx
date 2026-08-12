@@ -1,4 +1,4 @@
-﻿import {
+import {
   ArrowLeft,
   ShieldCheck,
   Clock,
@@ -8,7 +8,7 @@
   CheckCircle2,
 } from "lucide-react";
 import BackButton from "../components/BackButton";
-import { pgInfo } from "../data/pgData";
+import { pgInfo } from "../data/pgdata";
 
 function Rules() {
   return (
@@ -171,3 +171,4 @@ function RuleHighlight({ icon, title, text }) {
 }
 
 export default Rules;
+

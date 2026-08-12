@@ -1,4 +1,4 @@
-﻿import {
+import {
   ArrowRight,
   ShieldCheck,
   Users,
@@ -8,7 +8,7 @@
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import BackButton from "../components/BackButton";
-import { pgInfo } from "../data/pgData";
+import { pgInfo } from "../data/pgdata";
 
 function About() {
   return (
@@ -194,3 +194,4 @@ function InfoCard({ icon, title, text }) {
 }
 
 export default About;
+

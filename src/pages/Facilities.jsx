@@ -1,4 +1,4 @@
-﻿import {
+import {
   ArrowLeft,
   Wifi,
   Utensils,
@@ -10,7 +10,7 @@
   CheckCircle2,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { pgInfo } from "../data/pgData";
+import { pgInfo } from "../data/pgdata";
 
 function Facilities() {
   const navigate = useNavigate();
@@ -117,3 +117,4 @@ function Facilities() {
 }
 
 export default Facilities;
+
