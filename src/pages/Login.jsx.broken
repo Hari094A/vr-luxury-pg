@@ -1,0 +1,118 @@
+﻿$c = Get-Content .\src\components\Navbar.jsx -Raw
+$c = $c -replace '<Link to="/login" className="login-btn">Customer Login</Link>\s*<Link to="/owner-login" className="owner-login-btn">Owner Login</Link>', '<Link to="/login" className="login-btn">Login</Link>'
+Set-Content .\src\components\Navbar.jsx $c -Encoding utf8
+
+@'
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { User, ShieldCheck } from "lucide-react";
+
+function Login() {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const customer = JSON.parse(localStorage.getItem("vrCustomer") || "null");
+
+    if (
+      customer &&
+      customer.email === email &&
+      customer.password === password
+    ) {
+      localStorage.setItem("vrLoggedIn", "true");
+      localStorage.setItem("vrLoggedInCustomer", JSON.stringify(customer));
+      navigate("/");
+      window.location.reload();
+    } else {
+      alert("Invalid email or password. Please register first.");
+    }
+  };
+
+  return (
+    <main className="container-main section-padding">
+      <div className="card auth-card">
+
+        <span className="section-label">VR LUXURY PG</span>
+
+        <h1 className="section-title">Welcome Back</h1>
+
+        <p className="section-description">
+          Choose your account type to continue.
+        </p>
+
+        <div style={{
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
+          gap: "14px",
+          marginBottom: "28px"
+        }}>
+          <div style={{
+            padding: "18px",
+            border: "1px solid var(--border)",
+            borderRadius: "12px"
+          }}>
+            <User size={28} />
+            <h3>Customer Login</h3>
+            <p>Login to view your PG details and dashboard.</p>
+
+            <form onSubmit={handleSubmit}>
+              <input
+                type="email"
+                placeholder="Email Address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+
+              <input
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
+
+              <button type="submit" className="btn-primary">
+                Customer Login
+              </button>
+            </form>
+
+            <p>
+              Don't have an account?{" "}
+              <Link to="/register">Create Account</Link>
+            </p>
+          </div>
+
+          <div style={{
+            padding: "18px",
+            border: "1px solid var(--border)",
+            borderRadius: "12px"
+          }}>
+            <ShieldCheck size={28} />
+            <h3>Owner Login</h3>
+            <p>Access the PG administration dashboard.</p>
+
+            <Link
+              to="/owner-login"
+              className="btn-primary"
+              style={{
+                display: "inline-flex",
+                justifyContent: "center",
+                textDecoration: "none",
+                marginTop: "12px"
+              }}
+            >
+              Owner Login
+            </Link>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  );
+}
+
+export default Login;

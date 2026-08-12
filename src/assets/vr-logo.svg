@@ -1,0 +1,79 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff1a8"/>
+      <stop offset=".3" stop-color="#e9c35a"/>
+      <stop offset=".65" stop-color="#b98220"/>
+      <stop offset="1" stop-color="#f5d46b"/>
+    </linearGradient>
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#192842"/>
+      <stop offset="1" stop-color="#070c16"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <circle cx="256" cy="256" r="238"
+          fill="url(#bg)"
+          stroke="url(#gold)"
+          stroke-width="12"/>
+
+  <circle cx="256" cy="256" r="212"
+          fill="none"
+          stroke="#d6aa52"
+          stroke-width="2"
+          opacity=".55"/>
+
+  <!-- CENTERED VR MONOGRAM -->
+  <g fill="url(#gold)">
+
+    <!-- V -->
+    <path d="
+      M105 145
+      L155 145
+      L210 305
+      L256 145
+      L306 145
+      L256 350
+      L205 350
+      Z"/>
+
+    <!-- R -->
+    <path d="
+      M270 145
+      L330 145
+      C370 145 393 168 393 207
+      C393 235 379 254 354 264
+      L401 350
+      L346 350
+      L306 278
+      L306 350
+      L270 350
+      Z
+
+      M306 188
+      L306 238
+      L326 238
+      C342 238 351 228 351 213
+      C351 197 342 188 326 188
+      Z"
+      fill-rule="evenodd"/>
+
+  </g>
+
+  <!-- Bottom luxury line -->
+  <line x1="180" y1="382" x2="332" y2="382"
+        stroke="url(#gold)"
+        stroke-width="3"
+        stroke-linecap="round"/>
+
+  <!-- PG -->
+  <text x="256" y="420"
+        text-anchor="middle"
+        font-family="Georgia, serif"
+        font-size="27"
+        font-weight="700"
+        letter-spacing="8"
+        fill="#f2d06a">PG</text>
+</svg>
