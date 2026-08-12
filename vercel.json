@@ -1,12 +1,5 @@
-{
-  "version": 2,
+﻿{
   "rewrites": [
-    { "source": "/rooms", "destination": "/index.html" },
-    { "source": "/rooms/", "destination": "/index.html" },
-    { "source": "/booking", "destination": "/index.html" },
-    { "source": "/booking/", "destination": "/index.html" },
-    { "source": "/room-details/:path*", "destination": "/index.html" },
-    { "source": "/dashboard", "destination": "/index.html" },
-    { "source": "/owner-dashboard", "destination": "/index.html" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
