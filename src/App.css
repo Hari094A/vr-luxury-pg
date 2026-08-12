@@ -4621,3 +4621,155 @@ a[href*="/enquire"]:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== FINAL MOBILE POLISH ===== */
+@media (max-width: 600px) {
+  .container-main {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .dashboard-page {
+    overflow-x: hidden;
+  }
+
+  .dashboard-header {
+    padding: 20px 4px;
+  }
+
+  .dashboard-header h1,
+  .section-title {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px;
+  }
+
+  .dashboard-card {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px !important;
+  }
+
+  .account-info-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Owner dashboard */
+  .owner-admin-shell {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .owner-admin-header {
+    gap: 14px;
+    padding: 14px;
+  }
+
+  .owner-admin-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .owner-admin-actions a,
+  .owner-admin-actions button {
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .owner-admin-welcome {
+    padding: 21px !important;
+    gap: 18px;
+  }
+
+  .owner-admin-welcome h1 {
+    font-size: 25px;
+  }
+
+  .owner-admin-stats {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px;
+  }
+
+  .owner-edit-stat {
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .owner-stat-editable input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .owner-property-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .editable-room-card {
+    flex-direction: column;
+    align-items: stretch !important;
+  }
+
+  .editable-room-fields {
+    grid-template-columns: 1fr !important;
+    width: 100%;
+  }
+
+  .editable-room-fields input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .room-availability {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .owner-bottom-actions {
+    flex-direction: column;
+  }
+
+  .owner-bottom-actions button {
+    width: 100%;
+  }
+
+  .owner-admin-footer {
+    flex-direction: column;
+    gap: 7px;
+    text-align: center;
+  }
+
+  /* Login / register */
+  .login-page {
+    padding: 15px;
+  }
+
+  .login-card {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px 18px !important;
+  }
+
+  .login-tabs {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 380px) {
+  .owner-admin-stats {
+    grid-template-columns: 1fr !important;
+  }
+
+  .owner-admin-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .login-card {
+    padding: 20px 15px !important;
+  }
+}
