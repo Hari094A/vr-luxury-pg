@@ -73,7 +73,7 @@ function Login() {
             className={loginType === "customer" ? "active" : ""}
             onClick={() => switchLogin("customer")}
           >
-            ?? Customer Login
+            Customer Login
           </button>
 
           <button
@@ -81,7 +81,7 @@ function Login() {
             className={loginType === "admin" ? "active" : ""}
             onClick={() => switchLogin("admin")}
           >
-            ??? Admin Login
+            Admin Login
           </button>
         </div>
 
@@ -152,4 +152,5 @@ function Login() {
 }
 
 export default Login;
+
 

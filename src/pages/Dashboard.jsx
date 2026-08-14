@@ -44,7 +44,7 @@ function Dashboard() {
         </div>
 
         <section className="dashboard-header">
-          <span className="section-label">VR LUXURY PG � CUSTOMER PORTAL</span>
+          <span className="section-label">VR LUXURY PG · CUSTOMER PORTAL</span>
 
           <h1 className="section-title">
             Welcome, {shortName}
@@ -98,7 +98,7 @@ function Dashboard() {
                   <div>
                     <span>MONTHLY RENT</span>
                     <strong>
-                      ?{Number(bookedRoom.price).toLocaleString("en-IN")}
+                      ₹{Number(bookedRoom.price).toLocaleString("en-IN")}
                     </strong>
                   </div>
                 </div>
@@ -156,7 +156,7 @@ function Dashboard() {
 
             <div className="dashboard-info-row">
               <span>Security Deposit</span>
-              <strong>?{Number(pgInfo.deposit.amount).toLocaleString("en-IN")}</strong>
+              <strong>₹{Number(pgInfo.deposit.amount).toLocaleString("en-IN")}</strong>
             </div>
 
             <Link
@@ -283,4 +283,5 @@ function Dashboard() {
 }
 
 export default Dashboard;
+
 

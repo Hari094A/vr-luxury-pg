@@ -147,7 +147,7 @@ function RoomDetails() {
                     icon={<Wallet size={20} />}
                     title="Security Deposit"
                     value={
-                      "?" +
+                      "₹" +
                       Number(pgInfo.deposit.amount).toLocaleString("en-IN")
                     }
                   />
@@ -223,7 +223,7 @@ function RoomDetails() {
                     icon={<Wallet size={18} />}
                     label="Deposit"
                     value={
-                      "?" +
+                      "₹" +
                       Number(pgInfo.deposit.amount).toLocaleString("en-IN")
                     }
                   />
@@ -237,7 +237,7 @@ function RoomDetails() {
                     />
 
                     <p className="text-sm leading-6 text-slate-600">
-                      Security deposit is ?
+                      Security deposit is ₹
                       {Number(pgInfo.deposit.amount).toLocaleString("en-IN")}.
                       Refund conditions are subject to the PG rules.
                     </p>
@@ -317,4 +317,5 @@ function SummaryRow({ icon, label, value }) {
 }
 
 export default RoomDetails;
+
 
