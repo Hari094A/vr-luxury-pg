@@ -127,11 +127,11 @@ function Booking() {
                 <SummaryLine label="Room" value={room.title} />
                 <SummaryLine
                   label="Monthly Rent"
-                  value={"â‚¹" + rent.toLocaleString("en-IN")}
+                  value={"Ã¢â€šÂ¹" + rent.toLocaleString("en-IN")}
                 />
                 <SummaryLine
                   label="Security Deposit"
-                  value={"â‚¹" + deposit.toLocaleString("en-IN")}
+                  value={"Ã¢â€šÂ¹" + deposit.toLocaleString("en-IN")}
                 />
                 <SummaryLine
                   label="Move-in Date"
@@ -178,7 +178,7 @@ function Booking() {
           <BackButton />
 
           <p className="mt-8 text-sm font-semibold uppercase tracking-wider text-[var(--color-gold)]">
-            VR Luxury PG Â· Booking
+            VR Luxury PG Ã‚Â· Booking
           </p>
 
           <h1 className="mt-3 text-4xl font-bold sm:text-5xl">
@@ -213,7 +213,7 @@ function Booking() {
                 <SummaryDark
                   icon={<Wallet size={18} />}
                   label="Monthly Rent"
-                  value={"â‚¹" + rent.toLocaleString("en-IN")}
+                  value={"Ã¢â€šÂ¹" + rent.toLocaleString("en-IN")}
                 />
 
                 <SummaryDark
@@ -234,7 +234,7 @@ function Booking() {
                 <SummaryDark
                   icon={<ShieldCheck size={18} />}
                   label="Security Deposit"
-                  value={"â‚¹" + deposit.toLocaleString("en-IN")}
+                  value={"Ã¢â€šÂ¹" + deposit.toLocaleString("en-IN")}
                 />
               </div>
 
@@ -424,18 +424,18 @@ function Booking() {
                     <div className="mt-4 space-y-3 text-sm">
                       <SummaryLine
                         label="Monthly Rent"
-                        value={"â‚¹" + rent.toLocaleString("en-IN")}
+                        value={"Ã¢â€šÂ¹" + rent.toLocaleString("en-IN")}
                       />
 
                       <SummaryLine
                         label="Security Deposit"
-                        value={"â‚¹" + deposit.toLocaleString("en-IN")}
+                        value={"Ã¢â€šÂ¹" + deposit.toLocaleString("en-IN")}
                       />
 
                       <div className="border-t border-slate-200 pt-3">
                         <SummaryLine
                           label="Total"
-                          value={"â‚¹" + total.toLocaleString("en-IN")}
+                          value={"Ã¢â€šÂ¹" + total.toLocaleString("en-IN")}
                           strong
                         />
                       </div>
@@ -465,7 +465,7 @@ function Booking() {
                         : "mt-7 flex w-full cursor-not-allowed items-center justify-center gap-2 rounded-xl bg-slate-200 px-5 py-4 font-semibold text-slate-400"
                     }
                   >
-                    Confirm Booking Â· ?{total.toLocaleString("en-IN")}
+                    Confirm Booking Ã‚Â· ?{total.toLocaleString("en-IN")}
                     <CheckCircle2 size={18} />
                   </button>
                 </div>
@@ -607,6 +607,9 @@ function SummaryLine({ label, value, strong = false }) {
 }
 
 export default Booking;
+
+
+
 
 
 

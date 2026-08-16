@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { ArrowRight, BedDouble, IndianRupee, ClipboardList, Phone, Home, ShieldCheck } from "lucide-react";
 import { pgInfo } from "../data/pgdata";
 
@@ -44,7 +44,7 @@ function Dashboard() {
         </div>
 
         <section className="dashboard-header">
-          <span className="section-label">VR LUXURY PG � CUSTOMER PORTAL</span>
+          <span className="section-label">VR LUXURY PG · CUSTOMER PORTAL</span>
 
           <h1 className="section-title">
             Welcome, {shortName}
@@ -283,4 +283,5 @@ function Dashboard() {
 }
 
 export default Dashboard;
+
 

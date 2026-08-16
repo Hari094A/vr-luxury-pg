@@ -1,4 +1,4 @@
-import {
+﻿import {
   ArrowRight,
   ShieldCheck,
   Users,
@@ -194,4 +194,7 @@ function InfoCard({ icon, title, text }) {
 }
 
 export default About;
+
+
+
 

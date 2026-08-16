@@ -1,4 +1,4 @@
-export const pgInfo = {
+﻿export const pgInfo = {
   name: "Venkata Ravanaiah Luxury PG",
   shortName: "VR Luxury PG",
 
@@ -141,3 +141,7 @@ export const pgInfo = {
     double: 450,
   },
 };
+
+
+
+

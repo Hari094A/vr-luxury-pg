@@ -44,7 +44,7 @@ function Dashboard() {
         </div>
 
         <section className="dashboard-header">
-          <span className="section-label">VR LUXURY PG Â· CUSTOMER PORTAL</span>
+          <span className="section-label">VR LUXURY PG Ã‚Â· CUSTOMER PORTAL</span>
 
           <h1 className="section-title">
             Welcome, {shortName}
@@ -98,7 +98,7 @@ function Dashboard() {
                   <div>
                     <span>MONTHLY RENT</span>
                     <strong>
-                      â‚¹{Number(bookedRoom.price).toLocaleString("en-IN")}
+                      Ã¢â€šÂ¹{Number(bookedRoom.price).toLocaleString("en-IN")}
                     </strong>
                   </div>
                 </div>
@@ -156,7 +156,7 @@ function Dashboard() {
 
             <div className="dashboard-info-row">
               <span>Security Deposit</span>
-              <strong>â‚¹{Number(pgInfo.deposit.amount).toLocaleString("en-IN")}</strong>
+              <strong>Ã¢â€šÂ¹{Number(pgInfo.deposit.amount).toLocaleString("en-IN")}</strong>
             </div>
 
             <Link
@@ -283,6 +283,9 @@ function Dashboard() {
 }
 
 export default Dashboard;
+
+
+
 
 
 

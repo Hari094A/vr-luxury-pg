@@ -1,4 +1,4 @@
-import {
+﻿import {
   ArrowLeft,
   ShieldCheck,
   Clock,
@@ -171,4 +171,7 @@ function RuleHighlight({ icon, title, text }) {
 }
 
 export default Rules;
+
+
+
 

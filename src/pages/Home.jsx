@@ -11,7 +11,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 
-import { pgInfo } from "../data/pgdata";
+import { pgInfo } from "../data/pgData";
 
 function Home() {
   return (
@@ -167,46 +167,37 @@ function Home() {
       {/* ROOMS */}
       <section className="section-padding bg-white">
         <div className="container-main">
-          <div className="rooms-explore-home">
-
-            <div className="rooms-explore-icon">
-              <span>VR</span>
-            </div>
-
-            <div className="rooms-explore-content">
-              <p className="section-label">
-                Accommodation
-              </p>
+          <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
+            <div>
+              <p className="section-label">Accommodation</p>
 
               <h2 className="section-title">
-                Find the right room for you.
+                Choose the sharing that suits you.
               </h2>
 
               <p className="section-description">
-                Explore our comfortable sharing options, from private
-                rooms to double, triple and hall + kitchen bed sharing.
-                Choose the option that best fits your comfort and budget.
+                Flexible accommodation options for students and working
+                professionals.
               </p>
-
-              <div className="rooms-explore-highlights">
-                <span>Single Sharing</span>
-                <span>Double Sharing</span>
-                <span>Triple Sharing</span>
-                <span>Hall + Kitchen</span>
-              </div>
-
-              <a
-                href="/rooms"
-                className="rooms-explore-btn"
-              >
-                Explore Rooms
-                <ArrowRight size={18} />
-              </a>
             </div>
 
+            <a
+              href="/rooms"
+              className="inline-flex shrink-0 items-center gap-2 font-semibold text-[var(--color-navy)]"
+            >
+              View all rooms
+              <ArrowRight size={17} />
+            </a>
+          </div>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {pgInfo.rooms.slice(0, 3).map((room) => (
+              <RoomCard key={room.id} room={room} />
+            ))}
           </div>
         </div>
       </section>
+
       {/* FACILITIES */}
       <section className="section-padding bg-[var(--color-cream)]">
         <div className="container-main">
@@ -477,4 +468,3 @@ function FacilityItem({ icon, title, text }) {
 }
 
 export default Home;
-

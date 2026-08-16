@@ -1,4 +1,4 @@
-import {
+﻿import {
   ArrowRight,
   BedDouble,
   Bath,
@@ -196,4 +196,5 @@ function DetailRow({ icon, label, value }) {
 }
 
 export default Rooms;
+
 

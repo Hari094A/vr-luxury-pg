@@ -1,4 +1,4 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 
 :root {
   --color-navy: #0b1f33;
@@ -162,5 +162,142 @@ a {
 
   .container-main {
     width: min(100% - 24px, 1180px);
+  }
+}
+
+/* =========================================================
+   VR LUXURY PG - RESPONSIVE MOBILE / TABLET / DESKTOP
+   ========================================================= */
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  max-width: 100%;
+}
+
+.container-main {
+  width: min(1180px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .container-main {
+    width: min(100% - 32px, 900px);
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+  }
+
+  .section-description {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .container-main {
+    width: calc(100% - 24px);
+  }
+
+  .section-padding {
+    padding-block: 44px;
+  }
+
+  .section-title {
+    margin-top: 8px;
+    font-size: clamp(1.65rem, 8vw, 2.2rem);
+    line-height: 1.15;
+  }
+
+  .section-description {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    min-height: 48px;
+    padding-inline: 18px;
+  }
+
+  .card {
+    border-radius: 14px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .container-main {
+    width: calc(100% - 20px);
+  }
+
+  .section-padding {
+    padding-block: 36px;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .section-description {
+    font-size: 0.92rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+}
+
+/* Prevent tables/cards/forms from creating horizontal scrolling */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Touch-friendly controls */
+@media (hover: none) and (pointer: coarse) {
+  button,
+  .btn-primary,
+  .btn-secondary,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  button,
+  .btn-primary,
+  .btn-secondary {
+    min-height: 48px;
   }
 }
